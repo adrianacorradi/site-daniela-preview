@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daniela Wink Ruiz — Analista Junguiana (IAAP) em Lisboa</title>
+<title>Daniela Wink Ruiz &middot; Analista Junguiana (IAAP) em Lisboa</title>
 <meta name="description" content="Analise junguiana, abordagem corporal e trabalho com grupos. Consultas em Lisboa e online. Para quem esta na travessia de fase de vida, de pais, ou de si mesma.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -259,6 +259,29 @@
   .card h3{font-size:20px;color:var(--marfim);margin-bottom:12px;font-weight:500;}
   .card p{font-size:14.5px;color:var(--cinza-quente);font-weight:300;}
 
+  .pub-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+  }
+  .pub-card{
+    display:block;
+    border:1px solid var(--divisor);
+    padding:28px 26px;
+    border-radius:4px;
+    transition:border-color .2s, transform .2s;
+  }
+  .pub-card:hover{border-color:var(--dourado);transform:translateY(-3px);}
+  .pub-meta{
+    font-size:11px;
+    letter-spacing:.05em;
+    text-transform:uppercase;
+    color:var(--dourado);
+    margin-bottom:14px;
+  }
+  .pub-card h3{font-size:18px;color:var(--marfim);margin-bottom:10px;font-weight:500;}
+  .pub-card p{font-size:14px;color:var(--cinza-quente);font-weight:300;}
+
   #evento{
     background:var(--azul-noite);
     max-width:none;
@@ -346,6 +369,7 @@
     #inicio h1{font-size:36px;}
     .about-grid,.contato-grid{grid-template-columns:1fr !important;}
     .cards{grid-template-columns:1fr;}
+    .pub-grid{grid-template-columns:1fr;}
     .info-grid{grid-template-columns:1fr 1fr;}
   }
 </style>
@@ -368,7 +392,7 @@
       <li><a href="#inicio" class="nav-link">Início</a></li>
       <li><a href="#sobre" class="nav-link">Sobre</a></li>
       <li><a href="#trabalho" class="nav-link">Como Trabalho</a></li>
-      <li><a href="#evento" class="nav-link">Próximo Evento</a></li>
+      <li><a href="#publicacoes" class="nav-link">Publicações</a></li>
       <li><a href="#contato" class="nav-link">Contato</a></li>
     </ul>
   </nav>
@@ -388,11 +412,11 @@
 
   <section id="inicio">
     <div class="eyebrow">Análise Junguiana &middot; Lisboa</div>
-    <h1>Para quem está na travessia de fase de vida, de país ou de si mesma.</h1>
+    <h1>Para quem está na travessia: de fase de vida, de país, ou de si mesma.</h1>
     <p class="lede">Acompanho travessias: processos terapêuticos individuais e em grupo, com rigor clínico e espaço para o que ainda não tem nome.</p>
     <div class="cta-row">
       <a href="mailto:dwruiz@hotmail.com" class="btn solid">Marcar Consulta</a>
-      <a href="#evento" class="btn">Conhecer o Workshop</a>
+      <a href="#publicacoes" class="btn">Ver Publicações</a>
     </div>
   </section>
 
@@ -401,15 +425,15 @@
     <h2>A travessia que trouxe Daniela até aqui</h2>
     <div class="about-grid">
       <div>
-        <p>Depois de quase 20 anos de carreira internacional, Daniela viveu a sua própria travessia do meio da vida — um processo intenso de transformação e análise que abriu um caminho profissional novo.</p>
-        <p>Foi esse processo que a levou à formação internacional em Análise Junguiana no C.G. Jung Institute, em Zurique, e à acreditação como membro da IAAP (International Association for Analytical Psychology).</p>
-        <p>Hoje atende em consultório em Lisboa e online, para quem está a atravessar uma mudança de fase de vida, de país, ou de si mesma.</p>
+        <p>Depois de quase 20 anos de carreira internacional, Daniela viveu a sua própria travessia do meio da vida: um processo intenso de transformação e análise que abriu um caminho profissional novo.</p>
+        <p>Foi esse processo que a levou à psicologia analítica e culminou na formação em Análise Junguiana no C.G. Jung Institut, em Zurique, e na acreditação como membro da IAAP (International Association for Analytical Psychology).</p>
+        <p>Hoje atende em consultório em Lisboa e online, para quem atravessa uma mudança de fase de vida, de país, ou de si mesma.</p>
 
         <div class="formacao-title">Formação</div>
         <ul class="formacao-list">
-          <li>Análise Junguiana — C.G. Jung Institute, Zurique (2017–2023)</li>
-          <li>Mestrado em Psicologia Analítica — PUC-SP, Brasil (2012–2014)</li>
-          <li>Psicologia de Grupos (SBDG, metodologia Tavistock) — Brasil (2016–2018)</li>
+          <li>Análise Junguiana: C.G. Jung Institute, Zurique</li>
+          <li>Mestrado em Psicologia Analítica: PUC-SP, Brasil</li>
+          <li>Psicologia de Grupos (SBDG, metodologia Tavistock): Brasil</li>
           <li>Somatic Experiencing® (em formação)</li>
         </ul>
       </div>
@@ -444,31 +468,62 @@
       <div class="card">
         <div class="num">01</div>
         <h3>Análise Junguiana</h3>
-        <p>Processos terapêuticos individuais, em consultório em Lisboa ou online, com base na psicologia analítica de Jung.</p>
+        <p>Processos terapêuticos individuais, em consultório em Lisboa ou online, com base na psicologia analítica de C. G. Jung.</p>
       </div>
       <div class="card">
         <div class="num">02</div>
         <h3>Abordagem Corporal</h3>
-        <p>O corpo como parte do processo, não separado da mente. Trabalho em formação em Somatic Experiencing®.</p>
+        <p>Integração da dimensão somática no processo terapêutico. Uma via de acesso ao sentir, ao equilíbrio interno e à elaboração de memórias profundas. Trabalho em formação em Somatic Experiencing®.</p>
       </div>
       <div class="card">
         <div class="num">03</div>
         <h3>Trabalho com Grupos</h3>
-        <p>Espaços coletivos de escuta e elaboração, com metodologia SBDG (Tavistock).</p>
+        <p>Espaços coletivos de escuta e elaboração, onde o grupo atua como campo de ressonância, pertencimento e transformação mútua.</p>
       </div>
     </div>
   </section>
 
-  <section id="evento" class="full">
-    <div class="eyebrow">Próximo Evento</div>
-    <h2>Tecendo Sonhos</h2>
-    <div class="evento-name">Sonhar e Amanhecer</div>
-    <p class="sub">Um grupo de sonhos conduzido por Daniela Wink Ruiz e Pedro, em Lisboa.</p>
-    <p class="quote">"Ampliar o olhar — transcender a própria consciência pelo encontro com o outro."</p>
-    <div class="evento-meta">Setembro de 2026 &middot; <span class="tbd">data a confirmar</span> &middot; Oneleaf, Lisboa</div>
-    <div class="cta-row">
-      <a href="https://www.instagram.com/daniela.w.ruiz/" target="_blank" rel="noopener" class="btn solid">Saber Mais</a>
+  <!-- v2 (10/08/2026): seção "Próximo Evento" substituída por "Publicações", decisão da call Adriana/Dani do mesmo dia (Gemini 15h01). Resumos abaixo são um primeiro rascunho meu a partir do acervo já curado no projeto — PRECISAM da revisão da Dani antes de publicar (títulos, coautorias e datas devem ser confirmados por ela). -->
+  <section id="publicacoes" class="full">
+    <div class="eyebrow">Publicações</div>
+    <h2>Teses, palestras e artigos</h2>
+    <p class="sub" style="max-width:640px;margin-bottom:44px;">Ao longo dos anos de formação, Daniela escreveu e apresentou os trabalhos abaixo. Por enquanto, apenas os resumos estão disponíveis: para o texto completo, entre em contato.</p>
+    <div class="pub-grid">
+      <a class="pub-card" href="blog/sacrificio.html">
+        <div class="pub-meta">Tese de Diplomação &middot; C.G. Jung Institut, Zurique, 2023</div>
+        <h3>Sacrifício criativo e sacrifício neurótico</h3>
+        <p>As duas faces do autossacrifício e sua relação com o processo de individuação.</p>
+      </a>
+      <a class="pub-card" href="blog/dissertacao-mestrado-puc.html">
+        <div class="pub-meta">Dissertação de Mestrado &middot; PUC-SP, 2015</div>
+        <h3>Novo despertar: crise no trabalho e a transição do meio da vida</h3>
+        <p>Pesquisa com 10 participantes sobre crise profissional na metade da vida.</p>
+      </a>
+      <a class="pub-card" href="blog/crise-trabalho-buenos-aires.html">
+        <div class="pub-meta">Congresso Latino-Americano de Psicologia Analítica &middot; Buenos Aires, 2015</div>
+        <h3>Um novo despertar: crise no trabalho e o meio da vida</h3>
+        <p>Um recorte da dissertação de mestrado, apresentado em congresso.</p>
+      </a>
+      <a class="pub-card" href="blog/corpo-e-individuacao.html">
+        <div class="pub-meta">Seminário &middot; Zurique &middot; com Claudio Mello</div>
+        <h3>Corpo e individuação</h3>
+        <p>O "felt sense" e a leitura de Marion Woodman sobre o corpo no processo analítico.</p>
+      </a>
+      <a class="pub-card" href="blog/o-meio-da-vida.html">
+        <div class="pub-meta">Seminário &middot; C.G. Jung Institut, Zurique, 2025 &middot; com Claudio Mello</div>
+        <h3>O meio da vida</h3>
+        <p>Os três estágios do processo de individuação segundo Murray Stein.</p>
+      </a>
+      <a class="pub-card" href="blog/sonhar-em-grupo.html">
+        <div class="pub-meta">Congresso dos 75 anos &middot; C.G. Jung Institut, Zurique, 2023 &middot; em coautoria</div>
+        <h3>Sonhar em grupo</h3>
+        <p>O método por trás do Workshop Tecendo Sonhos: técnica de dreamwork, 9 grupos conduzidos no Brasil entre 2019 e 2023.</p>
+      </a>
     </div>
+    <div class="cta-row" style="margin-top:44px;">
+      <a href="blog/index.html" class="btn solid">Ver todas as publicações</a>
+    </div>
+    <p style="margin-top:36px;font-size:14px;color:var(--cinza-quente);">Workshop Tecendo Sonhos &middot; grupo de sonhos com Pedro &middot; setembro, Oneleaf Lisboa &middot; <a href="https://www.instagram.com/daniela.w.ruiz/" target="_blank" rel="noopener" style="color:var(--dourado);border-bottom:1px solid var(--dourado);">detalhes no Instagram</a></p>
   </section>
 
   <section id="contato">
